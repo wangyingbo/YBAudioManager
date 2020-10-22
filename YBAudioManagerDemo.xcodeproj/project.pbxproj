@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B829FE48A3DE905ECF61D6D /* Pods_YBAudioManagerDemo_YBAudioManagerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5878236EDECBCC6841E8B5CB /* Pods_YBAudioManagerDemo_YBAudioManagerDemoUITests.framework */; };
+		692093ADCE3BE1EE975580BC /* Pods_YBAudioManagerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04613BABF824B8259D058CD /* Pods_YBAudioManagerDemoTests.framework */; };
+		B460AEBA3EFB23738A62D4EF /* Pods_YBAudioManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E72D1A55B5F08A31366F86 /* Pods_YBAudioManagerDemo.framework */; };
 		D12E04082541549700F8023F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E04072541549700F8023F /* AppDelegate.m */; };
 		D12E040B2541549700F8023F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E040A2541549700F8023F /* SceneDelegate.m */; };
 		D12E040E2541549700F8023F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E040D2541549700F8023F /* ViewController.m */; };
@@ -36,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12E72D1A55B5F08A31366F86 /* Pods_YBAudioManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBAudioManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A1DFD6E8C0DC7D7F0D8CE5 /* Pods-YBAudioManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemo.release.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemo/Pods-YBAudioManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4960E92DE92557531FACA035 /* Pods-YBAudioManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemo.debug.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemo/Pods-YBAudioManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5878236EDECBCC6841E8B5CB /* Pods_YBAudioManagerDemo_YBAudioManagerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBAudioManagerDemo_YBAudioManagerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		998E929A02688C6724CA5A25 /* Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD2580641C0F5BFFE650AD46 /* Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D07840D68EE3BD4EAD2E5844 /* Pods-YBAudioManagerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemoTests/Pods-YBAudioManagerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D12E04032541549700F8023F /* YBAudioManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBAudioManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12E04062541549700F8023F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D12E04072541549700F8023F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +64,8 @@
 		D12E04292541549B00F8023F /* YBAudioManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBAudioManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12E042D2541549B00F8023F /* YBAudioManagerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBAudioManagerDemoUITests.m; sourceTree = "<group>"; };
 		D12E042F2541549B00F8023F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E30DB433C10BD4FE9C3FA8FE /* Pods-YBAudioManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemoTests/Pods-YBAudioManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F04613BABF824B8259D058CD /* Pods_YBAudioManagerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBAudioManagerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B460AEBA3EFB23738A62D4EF /* Pods_YBAudioManagerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692093ADCE3BE1EE975580BC /* Pods_YBAudioManagerDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B829FE48A3DE905ECF61D6D /* Pods_YBAudioManagerDemo_YBAudioManagerDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FCA418ACC520B7832DA8975 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4960E92DE92557531FACA035 /* Pods-YBAudioManagerDemo.debug.xcconfig */,
+				38A1DFD6E8C0DC7D7F0D8CE5 /* Pods-YBAudioManagerDemo.release.xcconfig */,
+				CD2580641C0F5BFFE650AD46 /* Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.debug.xcconfig */,
+				998E929A02688C6724CA5A25 /* Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.release.xcconfig */,
+				E30DB433C10BD4FE9C3FA8FE /* Pods-YBAudioManagerDemoTests.debug.xcconfig */,
+				D07840D68EE3BD4EAD2E5844 /* Pods-YBAudioManagerDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2C8D4A62657034A6882B38A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12E72D1A55B5F08A31366F86 /* Pods_YBAudioManagerDemo.framework */,
+				5878236EDECBCC6841E8B5CB /* Pods_YBAudioManagerDemo_YBAudioManagerDemoUITests.framework */,
+				F04613BABF824B8259D058CD /* Pods_YBAudioManagerDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D12E03FA2541549700F8023F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,8 @@
 				D12E04212541549B00F8023F /* YBAudioManagerDemoTests */,
 				D12E042C2541549B00F8023F /* YBAudioManagerDemoUITests */,
 				D12E04042541549700F8023F /* Products */,
+				0FCA418ACC520B7832DA8975 /* Pods */,
+				2C8D4A62657034A6882B38A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D12E04322541549B00F8023F /* Build configuration list for PBXNativeTarget "YBAudioManagerDemo" */;
 			buildPhases = (
+				65466C1223EEF54A88DF16CB /* [CP] Check Pods Manifest.lock */,
 				D12E03FF2541549700F8023F /* Sources */,
 				D12E04002541549700F8023F /* Frameworks */,
 				D12E04012541549700F8023F /* Resources */,
@@ -161,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D12E04352541549B00F8023F /* Build configuration list for PBXNativeTarget "YBAudioManagerDemoTests" */;
 			buildPhases = (
+				9DE259B4FFFD3CD919D8315E /* [CP] Check Pods Manifest.lock */,
 				D12E041A2541549B00F8023F /* Sources */,
 				D12E041B2541549B00F8023F /* Frameworks */,
 				D12E041C2541549B00F8023F /* Resources */,
@@ -179,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D12E04382541549B00F8023F /* Build configuration list for PBXNativeTarget "YBAudioManagerDemoUITests" */;
 			buildPhases = (
+				35AE449C00D402A1BCA789DE /* [CP] Check Pods Manifest.lock */,
 				D12E04252541549B00F8023F /* Sources */,
 				D12E04262541549B00F8023F /* Frameworks */,
 				D12E04272541549B00F8023F /* Resources */,
@@ -261,6 +305,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35AE449C00D402A1BCA789DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65466C1223EEF54A88DF16CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YBAudioManagerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE259B4FFFD3CD919D8315E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YBAudioManagerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D12E03FF2541549700F8023F /* Sources */ = {
@@ -437,6 +550,7 @@
 		};
 		D12E04332541549B00F8023F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4960E92DE92557531FACA035 /* Pods-YBAudioManagerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +568,7 @@
 		};
 		D12E04342541549B00F8023F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A1DFD6E8C0DC7D7F0D8CE5 /* Pods-YBAudioManagerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +586,7 @@
 		};
 		D12E04362541549B00F8023F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30DB433C10BD4FE9C3FA8FE /* Pods-YBAudioManagerDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +607,7 @@
 		};
 		D12E04372541549B00F8023F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07840D68EE3BD4EAD2E5844 /* Pods-YBAudioManagerDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +628,7 @@
 		};
 		D12E04392541549B00F8023F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2580641C0F5BFFE650AD46 /* Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T9CHG78WE;
@@ -529,6 +647,7 @@
 		};
 		D12E043A2541549B00F8023F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 998E929A02688C6724CA5A25 /* Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T9CHG78WE;
