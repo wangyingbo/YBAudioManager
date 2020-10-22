@@ -7,7 +7,7 @@
 //
 
 #import "YBAudioManager.h"
-
+#import "YBFilePathTool.h"
 
 #define AudioType @"mov"
 
@@ -16,21 +16,51 @@
 @property (nonatomic, strong) AVAudioSession *session;
 @property (nonatomic, copy) NSURL *recordFileUrl;
 @property (nonatomic, copy) NSString *filePath;
+@property (nonatomic, copy) NSString *folderName;
+@property (nonatomic, copy) NSString *suffix;
+@property (nonatomic, copy) NSString *fileName;
 @end
 
 @implementation YBAudioManager
 
-- (NSString *)setupPathWithFolderName:(NSString *)folderName {
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];
-    NSString *timeStampStr = [NSString stringWithFormat:@"%.f",timeStamp];
-    NSString *leveFolder = (folderName.length>0?[folderName stringByAppendingString:@"/"]:@"");
-    NSString *filePath = [path stringByAppendingFormat:@"/%@%@.%@",leveFolder,timeStampStr, AudioType];
-    // TODO: 采用fileUrlWithPath 否则取不到语音时长
-    self.recordFileUrl = [NSURL fileURLWithPath:filePath];
-    self.filePath = filePath;
-    NSLog(@"录音文件保存地址------->%@",self.filePath);
-    return filePath;
+- (instancetype)initWithFolder:(NSString *)folder fileName:(NSString *)fileName suffix:(NSString *)suffix {
+    if (self = [super init]) {
+        [self setupPathWithFolderName:folder];
+        [self setupFileName:fileName];
+        [self setupFileSuffix:suffix];
+        [self configFilePath];
+    }
+    return self;
+}
+
+- (void)setupPathWithFolderName:(NSString *)folderName {
+    self.folderName = folderName;
+}
+
+- (void)setupFileName:(NSString *)fileName {
+    self.fileName = fileName;
+}
+
+- (void)setupFileSuffix:(NSString *)suffix {
+    self.suffix = suffix;
+}
+
+- (NSString *)configFilePath {
+
+//    NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];
+//    NSString *timeStampStr = [NSString stringWithFormat:@"%.f",timeStamp];
+        
+    NSString *leveFolder = (self.folderName?self.folderName:@"");
+        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+        [formatter setDateFormat:@"yyyyMMddHHmmss"];
+        NSString *dateStr = [formatter stringFromDate:[NSDate date]];
+        
+        NSString *filePath = [YBFilePathTool filePathWithFolderName:leveFolder fileName:[NSString stringWithFormat:@"%@%@.%@",(self.fileName.length>0?[self.fileName stringByAppendingString:@"_"]:@""),dateStr,(self.suffix.length>0?self.suffix:AudioType)]];
+        //采用fileUrlWithPath 否则取不到语音时长
+        self.recordFileUrl = [NSURL fileURLWithPath:filePath];
+        self.filePath = filePath;
+        NSLog(@"录音文件保存地址------->%@",self.filePath);
+        return filePath;
 }
 
 - (AVAudioRecorder *)recorder {
@@ -56,11 +86,8 @@
             NSLog(@"创建录音机对象时发生错误，错误信息：%@",error.localizedDescription);
             return nil;
         }
-        
         NSLog(@"recorder 创建完成:%@",self.recordFileUrl);
-        
-//        [_recorder prepareToRecord];
-        
+        [_recorder prepareToRecord];
         NSLog(@"recorder prepare");
     }
     return _recorder;
@@ -101,7 +128,7 @@
     }
 }
 
-- (void)continueRecordd {
+- (void)continueRecord {
     [self startRecord];
 }
 
@@ -127,6 +154,10 @@
     NSInteger resultTime = 0;
     resultTime = CMTimeGetSeconds(duration);
     return resultTime;
+}
+
+- (BOOL)currentIsRecording {
+    return self.recorder.isRecording;
 }
 
 @end

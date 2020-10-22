@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		D12E04232541549B00F8023F /* YBAudioManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E04222541549B00F8023F /* YBAudioManagerDemoTests.m */; };
 		D12E042E2541549B00F8023F /* YBAudioManagerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E042D2541549B00F8023F /* YBAudioManagerDemoUITests.m */; };
 		D12E043F254158B400F8023F /* YBAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E043E254158B400F8023F /* YBAudioManager.m */; };
+		D12E044325419ED400F8023F /* YBFilePathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E044225419ED400F8023F /* YBFilePathTool.m */; };
+		D12E044725419F6D00F8023F /* YBDomainPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E044625419F6D00F8023F /* YBDomainPathTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		D12E042F2541549B00F8023F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12E043D254158B400F8023F /* YBAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBAudioManager.h; sourceTree = "<group>"; };
 		D12E043E254158B400F8023F /* YBAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBAudioManager.m; sourceTree = "<group>"; };
+		D12E044125419ED400F8023F /* YBFilePathTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBFilePathTool.h; sourceTree = "<group>"; };
+		D12E044225419ED400F8023F /* YBFilePathTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBFilePathTool.m; sourceTree = "<group>"; };
+		D12E044525419F6D00F8023F /* YBDomainPathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDomainPathTool.h; sourceTree = "<group>"; };
+		D12E044625419F6D00F8023F /* YBDomainPathTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDomainPathTool.m; sourceTree = "<group>"; };
 		E30DB433C10BD4FE9C3FA8FE /* Pods-YBAudioManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemoTests/Pods-YBAudioManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F04613BABF824B8259D058CD /* Pods_YBAudioManagerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBAudioManagerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +153,8 @@
 		D12E04052541549700F8023F /* YBAudioManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D12E044425419F6D00F8023F /* YBDomainPathTool */,
+				D12E044025419EC200F8023F /* YBFilePathTool */,
 				D12E043B2541587D00F8023F /* YBAudioManager */,
 				D12E04062541549700F8023F /* AppDelegate.h */,
 				D12E04072541549700F8023F /* AppDelegate.m */,
@@ -188,6 +196,24 @@
 				D12E043E254158B400F8023F /* YBAudioManager.m */,
 			);
 			path = YBAudioManager;
+			sourceTree = "<group>";
+		};
+		D12E044025419EC200F8023F /* YBFilePathTool */ = {
+			isa = PBXGroup;
+			children = (
+				D12E044125419ED400F8023F /* YBFilePathTool.h */,
+				D12E044225419ED400F8023F /* YBFilePathTool.m */,
+			);
+			path = YBFilePathTool;
+			sourceTree = "<group>";
+		};
+		D12E044425419F6D00F8023F /* YBDomainPathTool */ = {
+			isa = PBXGroup;
+			children = (
+				D12E044525419F6D00F8023F /* YBDomainPathTool.h */,
+				D12E044625419F6D00F8023F /* YBDomainPathTool.m */,
+			);
+			path = YBDomainPathTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,10 +455,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D12E040E2541549700F8023F /* ViewController.m in Sources */,
+				D12E044725419F6D00F8023F /* YBDomainPathTool.m in Sources */,
 				D12E04082541549700F8023F /* AppDelegate.m in Sources */,
 				D12E04192541549A00F8023F /* main.m in Sources */,
 				D12E043F254158B400F8023F /* YBAudioManager.m in Sources */,
 				D12E040B2541549700F8023F /* SceneDelegate.m in Sources */,
+				D12E044325419ED400F8023F /* YBFilePathTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
