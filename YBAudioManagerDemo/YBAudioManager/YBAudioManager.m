@@ -51,7 +51,7 @@
         NSError *error = nil;
         _recorder = [[AVAudioRecorder alloc]initWithURL:self.recordFileUrl settings:setting error:&error];
         _recorder.delegate = self;
-        //        _recorder.meteringEnabled = YES;//如果要监控声波则必须设置为YES
+        _recorder.meteringEnabled = YES;//如果要监控声波则必须设置为YES
         if (error) {
             NSLog(@"创建录音机对象时发生错误，错误信息：%@",error.localizedDescription);
             return nil;

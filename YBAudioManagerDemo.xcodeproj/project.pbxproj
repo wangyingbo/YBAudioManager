@@ -201,6 +201,7 @@
 				D12E03FF2541549700F8023F /* Sources */,
 				D12E04002541549700F8023F /* Frameworks */,
 				D12E04012541549700F8023F /* Resources */,
+				13100282AB4D5DF1D49C80AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +239,7 @@
 				D12E04252541549B00F8023F /* Sources */,
 				D12E04262541549B00F8023F /* Frameworks */,
 				D12E04272541549B00F8023F /* Resources */,
+				6A198E294CD9B310F2A9A2BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +321,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13100282AB4D5DF1D49C80AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YBAudioManagerDemo/Pods-YBAudioManagerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YBAudioManagerDemo/Pods-YBAudioManagerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YBAudioManagerDemo/Pods-YBAudioManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		35AE449C00D402A1BCA789DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +380,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A198E294CD9B310F2A9A2BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests/Pods-YBAudioManagerDemo-YBAudioManagerDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9DE259B4FFFD3CD919D8315E /* [CP] Check Pods Manifest.lock */ = {

@@ -6,6 +6,10 @@ target 'YBAudioManagerDemo' do
   use_frameworks!
 
   # Pods for YBAudioManagerDemo
+  pod 'LVRecordTool', '~> 1.4'
+
+
+
 
   target 'YBAudioManagerDemoTests' do
     inherit! :search_paths
