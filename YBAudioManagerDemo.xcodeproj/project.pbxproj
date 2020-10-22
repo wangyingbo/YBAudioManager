@@ -19,6 +19,7 @@
 		D12E04192541549A00F8023F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E04182541549A00F8023F /* main.m */; };
 		D12E04232541549B00F8023F /* YBAudioManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E04222541549B00F8023F /* YBAudioManagerDemoTests.m */; };
 		D12E042E2541549B00F8023F /* YBAudioManagerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E042D2541549B00F8023F /* YBAudioManagerDemoUITests.m */; };
+		D12E043F254158B400F8023F /* YBAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E043E254158B400F8023F /* YBAudioManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		D12E04292541549B00F8023F /* YBAudioManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBAudioManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12E042D2541549B00F8023F /* YBAudioManagerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBAudioManagerDemoUITests.m; sourceTree = "<group>"; };
 		D12E042F2541549B00F8023F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12E043D254158B400F8023F /* YBAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBAudioManager.h; sourceTree = "<group>"; };
+		D12E043E254158B400F8023F /* YBAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBAudioManager.m; sourceTree = "<group>"; };
 		E30DB433C10BD4FE9C3FA8FE /* Pods-YBAudioManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemoTests/Pods-YBAudioManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F04613BABF824B8259D058CD /* Pods_YBAudioManagerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBAudioManagerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,7 +109,6 @@
 				E30DB433C10BD4FE9C3FA8FE /* Pods-YBAudioManagerDemoTests.debug.xcconfig */,
 				D07840D68EE3BD4EAD2E5844 /* Pods-YBAudioManagerDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +147,7 @@
 		D12E04052541549700F8023F /* YBAudioManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D12E043B2541587D00F8023F /* YBAudioManager */,
 				D12E04062541549700F8023F /* AppDelegate.h */,
 				D12E04072541549700F8023F /* AppDelegate.m */,
 				D12E04092541549700F8023F /* SceneDelegate.h */,
@@ -176,6 +179,15 @@
 				D12E042F2541549B00F8023F /* Info.plist */,
 			);
 			path = YBAudioManagerDemoUITests;
+			sourceTree = "<group>";
+		};
+		D12E043B2541587D00F8023F /* YBAudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				D12E043D254158B400F8023F /* YBAudioManager.h */,
+				D12E043E254158B400F8023F /* YBAudioManager.m */,
+			);
+			path = YBAudioManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +395,7 @@
 				D12E040E2541549700F8023F /* ViewController.m in Sources */,
 				D12E04082541549700F8023F /* AppDelegate.m in Sources */,
 				D12E04192541549A00F8023F /* main.m in Sources */,
+				D12E043F254158B400F8023F /* YBAudioManager.m in Sources */,
 				D12E040B2541549700F8023F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
