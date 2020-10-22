@@ -9,7 +9,7 @@
 #import "YBAudioManager.h"
 #import "YBFilePathTool.h"
 
-#define AudioType @"mov"
+#define AudioType @"mp3"
 
 @interface YBAudioManager ()
 @property (nonatomic, strong) AVAudioRecorder *recorder;
