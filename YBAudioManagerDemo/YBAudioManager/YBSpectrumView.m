@@ -52,7 +52,7 @@
 
     self.itemColor = [UIColor colorWithRed:241/255.f green:60/255.f blue:57/255.f alpha:1.0];
 
-    self.middleInterval = 30.f;
+    self.middleInterval = 80.f;
     
     self.timeLabel = [[UILabel alloc]init];
     self.timeLabel.text = @"";
@@ -71,8 +71,8 @@
 
     [self.timeLabel sizeToFit];
     self.timeLabel.center = CGPointMake(self.itemWidth * 0.5f, self.itemHeight * 0.5f);
-
-    self.lineWidth = (self.itemWidth - self.middleInterval) / 2.f / self.numberOfItems;
+    
+    self.lineWidth = ((self.itemWidth - self.middleInterval) / 2.f) / self.numberOfItems;
 }
 
 #pragma mark - setter
@@ -123,15 +123,9 @@
     }
 }
 
-- (void)setItemLevelCallback:(void (^)(void))itemLevelCallback {
+- (void)setItemLevelCallback:(void (^)(YBSpectrumView *spectrumView))itemLevelCallback {
     _itemLevelCallback = itemLevelCallback;
 }
-
-//- (void)setItemLevelCallback:(void (^)(YBSpectrumView * _Nonnull))itemLevelCallback {
-//    _itemLevelCallback = itemLevelCallback;
-//
-//    [self start];
-//}
 
 
 - (void)setLevel:(CGFloat)level {
@@ -217,7 +211,7 @@
 #pragma mark - actions
 - (void)invoke {
     if (_itemLevelCallback) {
-        self.itemLevelCallback();
+        self.itemLevelCallback(self);
     }
 }
 

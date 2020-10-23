@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YBSpectrumView : UIView
 
-@property (nonatomic, copy) void (^itemLevelCallback)(void);
+@property (nonatomic, copy) void (^itemLevelCallback)(YBSpectrumView *spectrumView);
 
 //
 

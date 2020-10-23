@@ -71,7 +71,8 @@
 
 - (YBSpectrumView *)spectrumView {
     if (!_spectrumView) {
-        YBSpectrumView *spectrumView = [[YBSpectrumView alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.bounds)-50,120,100, 40.0)];
+        CGFloat spectrumView_w = 200.f;
+        YBSpectrumView *spectrumView = [[YBSpectrumView alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.bounds)-spectrumView_w/2,120,spectrumView_w, 40.0)];
         [self.view addSubview:spectrumView];
         _spectrumView = spectrumView;
     }
@@ -80,15 +81,14 @@
 
 - (void)configSpectrumView {
     [self.spectrumView class];
-    self.spectrumView.text = [NSString stringWithFormat:@"%@",@"01:12"];
+    self.spectrumView.text = [NSString stringWithFormat:@"%@",@"01:12:38"];
     __weak typeof(self)weakSelf = self;
-    self.spectrumView.itemLevelCallback = ^() {
+    self.spectrumView.itemLevelCallback = ^(YBSpectrumView *spectrumView) {
         __strong typeof(weakSelf)strongSelf = weakSelf;
-        NSLog(@"频谱回调了~");
         [strongSelf.audioManager updateMeters];
         //取得第一个通道的音频，音频强度范围是-160到0
         float power= [strongSelf.audioManager averagePowerForChannel:0];
-        strongSelf.spectrumView.level = power;
+        spectrumView.level = power;
     };
 }
 
