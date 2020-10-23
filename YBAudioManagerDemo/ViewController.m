@@ -9,10 +9,12 @@
 #import "ViewController.h"
 #import "YBAudioManager.h"
 #import "YBFilePathTool.h"
+#import "YBSpectrumView.h"
 
 
 @interface ViewController ()
 @property (nonatomic, strong) YBAudioManager *audioManager;
+@property (nonatomic, strong) YBSpectrumView *spectrumView;
 @end
 
 
@@ -25,8 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [self configUI];
+    
+    [self configSpectrumView];
 }
 
 #pragma mark - initUI
@@ -66,6 +69,29 @@
     layer.zPosition = 2;
 }
 
+- (YBSpectrumView *)spectrumView {
+    if (!_spectrumView) {
+        YBSpectrumView *spectrumView = [[YBSpectrumView alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.bounds)-50,120,100, 40.0)];
+        [self.view addSubview:spectrumView];
+        _spectrumView = spectrumView;
+    }
+    return _spectrumView;
+}
+
+- (void)configSpectrumView {
+    [self.spectrumView class];
+    self.spectrumView.text = [NSString stringWithFormat:@"%@",@"01:12"];
+    __weak typeof(self)weakSelf = self;
+    self.spectrumView.itemLevelCallback = ^() {
+        __strong typeof(weakSelf)strongSelf = weakSelf;
+        NSLog(@"频谱回调了~");
+        [strongSelf.audioManager updateMeters];
+        //取得第一个通道的音频，音频强度范围是-160到0
+        float power= [strongSelf.audioManager averagePowerForChannel:0];
+        strongSelf.spectrumView.level = power;
+    };
+}
+
 #pragma mark - initData
 
 - (YBAudioManager *)audioManager {
@@ -81,8 +107,11 @@
 - (void)buttonClick:(UIButton *)sender {
     if (self.audioManager.currentIsRecording) {
         [self.audioManager stopRecord];
+        [self.spectrumView stop];
+        self.audioManager = nil;
     }else {
         [self.audioManager startRecord];
+        [self.spectrumView start];
     }
 }
 

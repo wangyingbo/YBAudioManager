@@ -44,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
 // get audio time
 - (float)getAudioAllTime;
 
+- (void)updateMeters;
+
+- (float)averagePowerForChannel:(NSUInteger)channelNumber;
+
 /// 当前是否在录音
 - (BOOL)currentIsRecording;
 

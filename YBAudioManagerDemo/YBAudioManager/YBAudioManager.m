@@ -9,7 +9,7 @@
 #import "YBAudioManager.h"
 #import "YBFilePathTool.h"
 
-#define AudioType @"mp3"
+#define AudioType @"aac"
 
 @interface YBAudioManager ()
 @property (nonatomic, strong) AVAudioRecorder *recorder;
@@ -154,6 +154,16 @@
     NSInteger resultTime = 0;
     resultTime = CMTimeGetSeconds(duration);
     return resultTime;
+}
+
+- (void)updateMeters {
+    if (_recorder) {
+        [self.recorder updateMeters];
+    }
+}
+
+- (float)averagePowerForChannel:(NSUInteger)channelNumber {
+    return [_recorder averagePowerForChannel:channelNumber];
 }
 
 - (BOOL)currentIsRecording {

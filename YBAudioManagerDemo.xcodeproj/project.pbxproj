@@ -22,6 +22,7 @@
 		D12E043F254158B400F8023F /* YBAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E043E254158B400F8023F /* YBAudioManager.m */; };
 		D12E044325419ED400F8023F /* YBFilePathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E044225419ED400F8023F /* YBFilePathTool.m */; };
 		D12E044725419F6D00F8023F /* YBDomainPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E044625419F6D00F8023F /* YBDomainPathTool.m */; };
+		D12E044A25427AD300F8023F /* YBSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12E044925427AD300F8023F /* YBSpectrumView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		D12E044225419ED400F8023F /* YBFilePathTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBFilePathTool.m; sourceTree = "<group>"; };
 		D12E044525419F6D00F8023F /* YBDomainPathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDomainPathTool.h; sourceTree = "<group>"; };
 		D12E044625419F6D00F8023F /* YBDomainPathTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBDomainPathTool.m; sourceTree = "<group>"; };
+		D12E044825427AD300F8023F /* YBSpectrumView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSpectrumView.h; sourceTree = "<group>"; };
+		D12E044925427AD300F8023F /* YBSpectrumView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSpectrumView.m; sourceTree = "<group>"; };
 		E30DB433C10BD4FE9C3FA8FE /* Pods-YBAudioManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBAudioManagerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YBAudioManagerDemoTests/Pods-YBAudioManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F04613BABF824B8259D058CD /* Pods_YBAudioManagerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBAudioManagerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,6 +197,8 @@
 			children = (
 				D12E043D254158B400F8023F /* YBAudioManager.h */,
 				D12E043E254158B400F8023F /* YBAudioManager.m */,
+				D12E044825427AD300F8023F /* YBSpectrumView.h */,
+				D12E044925427AD300F8023F /* YBSpectrumView.m */,
 			);
 			path = YBAudioManager;
 			sourceTree = "<group>";
@@ -458,6 +463,7 @@
 				D12E044725419F6D00F8023F /* YBDomainPathTool.m in Sources */,
 				D12E04082541549700F8023F /* AppDelegate.m in Sources */,
 				D12E04192541549A00F8023F /* main.m in Sources */,
+				D12E044A25427AD300F8023F /* YBSpectrumView.m in Sources */,
 				D12E043F254158B400F8023F /* YBAudioManager.m in Sources */,
 				D12E040B2541549700F8023F /* SceneDelegate.m in Sources */,
 				D12E044325419ED400F8023F /* YBFilePathTool.m in Sources */,
