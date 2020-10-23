@@ -108,8 +108,8 @@
     if (self.audioManager.currentIsRecording) {
         [self.audioManager stopRecord];
         [self.spectrumView stop];
-        self.audioManager = nil;
     }else {
+        self.audioManager = nil;
         [self.audioManager startRecord];
         [self.spectrumView start];
     }

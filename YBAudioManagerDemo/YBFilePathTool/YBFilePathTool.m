@@ -38,13 +38,6 @@
 
 + (BOOL)existDataWithPath:(NSString *)filePath {
     BOOL isExist = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
-    if (!isExist) {
-        NSArray *arr = [filePath componentsSeparatedByString:@"/"];
-        NSMutableArray *mutArr = [NSMutableArray arrayWithArray:arr];
-        [mutArr removeLastObject];
-        NSString *newFilePath = [mutArr componentsJoinedByString:@"/"];
-        return [[NSFileManager defaultManager] fileExistsAtPath:newFilePath];
-    }
     return isExist;
 }
 
