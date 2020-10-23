@@ -35,7 +35,7 @@
 + (BOOL)saveData:(NSData *)data name:(NSString *)name {
     NSString *filePath = [self filePathWithName:name];
     
-    BOOL result =[data writeToFile:filePath atomically:YES];
+    BOOL result = [data writeToFile:filePath atomically:YES];
     return result;
     
 }

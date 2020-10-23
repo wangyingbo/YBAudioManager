@@ -23,6 +23,14 @@
 
 @implementation YBAudioManager
 
+- (instancetype)init
+{
+    @throw [NSException exceptionWithName:NSGenericException
+                                   reason:@"`-init` unavailable. Use `-initWithFolder:fileName:suffix:` instead"
+                                 userInfo:nil];
+    return nil;
+}
+
 - (instancetype)initWithFolder:(NSString *)folder fileName:(NSString *)fileName suffix:(NSString *)suffix {
     if (self = [super init]) {
         [self setupPathWithFolderName:folder];

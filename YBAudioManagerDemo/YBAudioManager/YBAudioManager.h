@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) NSString *filePath;
 
++ (instancetype)new NS_UNAVAILABLE;
+
+- (instancetype)init NS_UNAVAILABLE;
+
 - (instancetype)initWithFolder:(NSString * _Nullable )folder fileName:(NSString * _Nullable )fileName suffix:(NSString * _Nullable )suffix;
 
 // set save path

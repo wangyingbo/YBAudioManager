@@ -13,10 +13,10 @@
 
 #pragma mark - file
 
-+ (NSString *)filePathWithFolderName:(NSString *)folderName fileName:(NSString *)name {
++ (NSString *)filePathWithFolderName:(NSString *)folderName fileName:(NSString *)fileName {
     NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
     
-    NSArray *nameArr = [name componentsSeparatedByString:@"/"];
+    NSArray *nameArr = [fileName componentsSeparatedByString:@"/"];
     NSMutableArray *mutArr = [NSMutableArray arrayWithArray:nameArr];
     [mutArr removeLastObject];
     NSString *preName = [mutArr componentsJoinedByString:@"/"];
@@ -26,9 +26,14 @@
         [[NSFileManager defaultManager] createDirectoryAtPath:folderPath withIntermediateDirectories:YES attributes:nil error:nil];
     }
     
-    NSString *filePath = [[paths firstObject]stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@",folderName,name]];
+    NSString *filePath = [[paths firstObject]stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@",folderName,fileName]];
     
     return filePath;
+}
+
++ (BOOL)saveData:(NSData *)data folderName:(NSString *)folderName fileName:(NSString *)fileName {
+    NSString *filePath = [self filePathWithFolderName:folderName fileName:fileName];
+    return [data writeToFile:filePath atomically:YES];
 }
 
 + (NSData *)getDataWithPath:(NSString *)filePath {
