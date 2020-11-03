@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 根据文件夹名和文件名拼接路径
 /// @param folderName 文件夹名
-/// @param name 文件名，如果非空则会在后面拼接时间，如果为空则是时间；
+/// @param fileName 文件名，如果非空则会在后面拼接时间，如果为空则是时间；
 + (NSString *)filePathWithFolderName:(NSString * _Nullable )folderName fileName:(NSString * _Nullable )fileName;
 
 + (BOOL)saveData:(NSData *)data folderName:(NSString *)folderName fileName:(NSString *)fileName;
