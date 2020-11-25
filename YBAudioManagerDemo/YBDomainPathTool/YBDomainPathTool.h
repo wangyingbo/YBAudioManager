@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)folderName;
 
++ (NSString *)getFilePathWithName:(NSString *)name;
+
 + (BOOL)saveData:(NSData *)data name:(NSString *)name;
 
 + (NSData *)getDataWithName:(NSString *)name;

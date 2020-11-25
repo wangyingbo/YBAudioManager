@@ -32,6 +32,10 @@
     return filePath;
 }
 
++ (NSString *)getFilePathWithName:(NSString *)name {
+    return [self getFilePathWithName:name];
+}
+
 + (BOOL)saveData:(NSData *)data name:(NSString *)name {
     NSString *filePath = [self filePathWithName:name];
     
